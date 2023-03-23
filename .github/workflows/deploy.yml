@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Deploy to server
-      uses: easingthemes/ssh-deploy@v2.3.3
+      uses: easingthemes/ssh-deploy@latest
       with:
         ssh_private_key: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
         remote_host: 49.249.66.182
